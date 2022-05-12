@@ -45,7 +45,7 @@ accountsBtn.addEventListener('click', function () {
 })
 
 function displayAccounts() {
-    let accounts = store.getState().accounts;
+    let accounts = store.getState().accountsData.accounts;
     console.log(accounts.length)
     let text = ``;
     for (let i = 0; i < accounts.length; i++) {
@@ -74,7 +74,7 @@ function deleteAccount() {
 }
 
 function changeView() {
-    let view = store.getState().display;
+    let view = store.getState().displayData.display;
 
     if (view == 1) {
         accountsView.style.display = 'block';
