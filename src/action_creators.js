@@ -26,3 +26,12 @@ export const DISPLAY_ADD_ACCOUNT_ACTION = () =>{
         }
     }
 }
+
+export const DELETE_ACCOUNT_ACTION = (id) =>{
+    return{
+        type: actionTypes.DELETE_ACCOUNT_ACTION,
+        payload: {
+            id: id
+        }
+    }
+}

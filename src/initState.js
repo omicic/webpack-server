@@ -1,4 +1,4 @@
-const initState = {
+const state = {
     accounts: [{
         id: "1",
         name: "Olja",
@@ -8,4 +8,4 @@ const initState = {
     display: 1
 }
 
-export default initState;
+export default state;
