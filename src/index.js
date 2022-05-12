@@ -46,7 +46,7 @@ accountsBtn.addEventListener('click', function () {
 
 function displayAccounts() {
     let accounts = store.getState().accountsData.accounts;
-    console.log(accounts.length)
+   // console.log(accounts.length)
     let text = ``;
     for (let i = 0; i < accounts.length; i++) {
         const account = accounts[i];
