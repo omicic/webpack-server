@@ -2,7 +2,7 @@ import { createStore } from "redux";
 import logger from 'redux-logger';
  import { applyMiddleware } from "redux";
 import { rootReducer } from "./rootReducer"; 
-import { thunkMiddleware } from "redux-thunk";
+import thunk  from "redux-thunk";
 
 
 /* const myFunc = function(store) {
@@ -18,6 +18,6 @@ import { thunkMiddleware } from "redux-thunk";
  */
 
 
-const store = createStore(rootReducer,applyMiddleware(logger,thunkMiddleware));
+const store = createStore(rootReducer,applyMiddleware(logger,thunk));
 
 export default store;

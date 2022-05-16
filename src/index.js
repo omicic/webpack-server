@@ -27,6 +27,7 @@ saveBtn.addEventListener('click', function () {
 })
 
 window.addEventListener('load', () => {
+    store.dispatch(action_creators.FETCH_ACCOUNTS());
     store.dispatch(action_creators.START())
 })
 
